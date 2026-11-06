@@ -1,0 +1,12 @@
+services:
+  mongo:
+    image: mongo:7
+    container_name: manageorder-mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - manageorder_mongo:/data/db
+
+volumes:
+  manageorder_mongo:

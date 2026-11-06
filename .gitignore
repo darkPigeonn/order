@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.next/
+out/
+coverage/
+uploads/
+*.log
+.env
+.env.local
+apps/api/.env
+apps/web/.env.local
+.DS_Store
+tsconfig.tsbuildinfo
+apps/api/tsconfig.build.tsbuildinfo

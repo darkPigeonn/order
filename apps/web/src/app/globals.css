@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #1c2838;
+  font-feature-settings: "cv11", "ss01";
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #d7e0ea;
+  background: #ffffff;
+  border-radius: 0.625rem;
+  padding: 0.6rem 0.75rem;
+  color: #1c2838;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input[type="checkbox"],
+input[type="file"] {
+  width: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.12);
+}
+
+.field-affix {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #d7e0ea;
+  border-radius: 0.625rem;
+  background: #fff;
+  padding-left: 0.75rem;
+}
+
+.field-affix:focus-within {
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.12);
+}
+
+.field-affix input {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  padding-left: 0;
+}
+
+.field-affix input:focus {
+  border: 0;
+  box-shadow: none;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.shadow-card {
+  box-shadow: 0 1px 2px rgb(16 36 62 / 0.05), 0 10px 28px rgb(16 36 62 / 0.06);
+}
+
+thead th {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
